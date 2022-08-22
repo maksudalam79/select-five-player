@@ -39,5 +39,26 @@ function addToCard(element) {
 
 }
 
+document.getElementById('per-person').addEventListener('click', function () {
+    const playerAmount = document.getElementById('player-amount');
+    const playerString = playerAmount.value;
+    const playerNumber = parseInt(playerString);
+
+    const totalAddedCard = document.getElementById('total-added-card');
+    const totalAddedCardstring = totalAddedCard.innerText;
+    const totalAddedCardNumber = parseInt(totalAddedCardstring);
+
+    const totalPerson = playerNumber * totalAddedCardNumber;
+
+
+    const totalPlayerExpenses = document.getElementById('total-player-expenses');
+    const totalPlayerString = totalPlayerExpenses.innerText;
+    const totalPlayerNumber = parseInt(totalPlayerString);
+    totalPlayerExpenses.innerText = totalPerson;
+
+    return totalPlayerNumber;
+
+})
+
 
 
