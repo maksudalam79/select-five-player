@@ -55,6 +55,7 @@ document.getElementById('per-person').addEventListener('click', function () {
     const totalPlayerString = totalPlayerExpenses.innerText;
     const totalPlayerNumber = parseInt(totalPlayerString);
     totalPlayerExpenses.innerText = totalPerson;
+
     return totalPlayerNumber;
 
 
