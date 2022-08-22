@@ -15,9 +15,9 @@
 
 </head>
 
-<body>
+<body class="">
     <header>
-        <div class="overflow-hidden text-center">
+        <div class="overflow-hidden text-center ">
             <div class="row align-items-start">
                 <div class="col ">
                     <img class="w-100 rounded" src="img/ronaldinho-barcelona-wallpaper-preview.jpg" alt="">
@@ -43,7 +43,8 @@
                             <h5 class="card-title">Lionel Messi</h5>
                             <p class="card-text">Goals:La Liga (474)</p>
                             <div>
-                                <button class="btn border-0 m-2 btn-primary" onclick="addToCard(this)">SELECT</button>
+                                <button class="btn border-0 m-2 btn-primary"
+                                    onclick="addToCard(this);this.disabled=true">SELECT</button>
                             </div>
                         </div>
 
@@ -56,7 +57,8 @@
                             <h5 class="card-title">Neymar Jr</h5>
                             <p class="card-text">Goals:La Liga (123)</p>
                             <div>
-                                <button class="btn border-0 m-2 btn-primary" onclick="addToCard(this)">SELECT</button>
+                                <button class="btn border-0 m-2 btn-primary"
+                                    onclick="addToCard(this);this.disabled=true">SELECT</button>
                             </div>
                         </div>
 
@@ -69,23 +71,21 @@
                             <h5 class="card-title">Kylian Mbappé</h5>
                             <p class="card-text">Goals:la Liga(57)</p>
                             <div>
-                                <button class="btn border-0 m-2 btn-primary" onclick="addToCard(this)">SELECT</button>
+                                <button class="btn border-0 m-2 btn-primary"
+                                    onclick="addToCard(this);this.disabled=true">SELECT</button>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="col bg-info text-center rounded ">
-                    <div class="mt-5">
+                <div class="col bg-info text-center rounded bg-black " style="height:229px ;">
+                    <div class="mt-5 text-white">
                         <h2>Select - <span id="total-added-card">0</span></h2>
                     </div>
                     <div>
                         <table class="m-3 w-50 ">
-                            <tbody id="player_select" style="font-size: 15px">
-                                <!-- <tr>
-                                    <th>1</th>
-                                    <td>messi</td>
-                                </tr> -->
+                            <tbody id="player_select" style="font-size: 15px" class="text-white">
+
                             </tbody>
                         </table>
                     </div>
@@ -103,7 +103,8 @@
                             <h5 class="card-title">Vítor Machado</h5>
                             <p class="card-text">Goals:La Liga (0)</p>
                             <div>
-                                <button class="btn border-0 m-2 btn-primary" onclick="addToCard(this)">SELECT</button>
+                                <button class="btn border-0 m-2 btn-primary"
+                                    onclick="addToCard(this);this.disabled=true">SELECT</button>
                             </div>
                         </div>
 
@@ -116,7 +117,8 @@
                             <h5 class="card-title">Sergio Ramos</h5>
                             <p class="card-text">Goals:La Liga (2)</p>
                             <div>
-                                <button class="btn border-0 m-2 btn-primary" onclick="addToCard(this)">SELECT</button>
+                                <button class="btn border-0 m-2 btn-primary"
+                                    onclick="addToCard(this);this.disabled=true">SELECT</button>
                             </div>
                         </div>
 
@@ -129,7 +131,8 @@
                             <h5 class="card-title">Renato Sanches</h5>
                             <p class="card-text">Goals:la Liga(32)</p>
                             <div>
-                                <button class="btn border-0 m-2 btn-primary" onclick="addToCard(this)">SELECT</button>
+                                <button class="btn border-0 m-2 btn-primary"
+                                    onclick="addToCard(this);this.disabled=true">SELECT</button>
                             </div>
                         </div>
 
@@ -144,7 +147,7 @@
                                     <h6>Per Player:</h6>
                                     <input type="text" name="" id="">
                                 </form>
-                                <button class="btn btn-primary mt-3">Calculate</button>
+                                <button id="per-person" class="btn btn-primary mt-3">Calculate</button>
                             </div>
                             <div class="mt-3">
                                 <h6>Player Expenses:</h6>
@@ -167,10 +170,7 @@
                             </div>
 
                             <div class="mt-3">
-                                <h6>Total: <span>$
-                                        <span>0
-                                        </span>
-                                    </span>
+                                <h6>Total:
                                 </h6>
                             </div>
 

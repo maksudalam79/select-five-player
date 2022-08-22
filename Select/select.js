@@ -1,12 +1,12 @@
 const cardArray = [];
 
 function allSelect(playerCard) {
-    console.log(playerCard)
     const tableBody = document.getElementById("player_select");
     tableBody.innerHTML = "";
     for (let i = 0; i < playerCard.length; i++) {
         console.log(cardArray[i].playerName);
         const name = cardArray[i].playerName;
+
 
         const tr = document.createElement('tr');
         tr.innerHTML = `
@@ -16,12 +16,16 @@ function allSelect(playerCard) {
 </tr>`;
         tableBody.appendChild(tr)
     }
-
-
-
+    if (playerCard.length <= 5) {
+        return
+    }
+    else {
+        return alert("gewfrygwe")
+    }
 
 
 }
+
 
 function addToCard(element) {
     const playerName = element.parentNode.parentNode.children[0].innerText;
@@ -30,5 +34,10 @@ function addToCard(element) {
     }
     cardArray.push(playerObj)
     document.getElementById('total-added-card').innerText = cardArray.length;
+
     allSelect(cardArray);
+
 }
+
+
+
