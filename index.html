@@ -42,8 +42,11 @@
                         <div class="card-body">
                             <h5 class="card-title">Lionel Messi</h5>
                             <p class="card-text">Goals:La Liga (474)</p>
+                            <div>
+                                <button class="btn border-0 m-2 btn-primary" onclick="addToCard(this)">SELECT</button>
+                            </div>
                         </div>
-                        <button class="btn border-0 m-2 btn-primary">SELECT</button>
+
                     </div>
                 </div>
                 <div class="col">
@@ -52,8 +55,11 @@
                         <div class="card-body">
                             <h5 class="card-title">Neymar Jr</h5>
                             <p class="card-text">Goals:La Liga (123)</p>
+                            <div>
+                                <button class="btn border-0 m-2 btn-primary" onclick="addToCard(this)">SELECT</button>
+                            </div>
                         </div>
-                        <button class="btn border-0 m-2 btn-primary">SELECT</button>
+
                     </div>
                 </div>
                 <div class="col">
@@ -62,15 +68,19 @@
                         <div class="card-body">
                             <h5 class="card-title">Kylian Mbappé</h5>
                             <p class="card-text">Goals:la Liga(57)</p>
+                            <div>
+                                <button class="btn border-0 m-2 btn-primary" onclick="addToCard(this)">SELECT</button>
+                            </div>
                         </div>
-                        <button class="btn border-0 m-2 btn-primary">SELECT</button>
+
                     </div>
                 </div>
                 <div class="col">
                     <div class="card bg-black">
                         <div class=" card-body text-white bold">
-                            <h5 class="text-center">Selected - V</h5>
-                            <ul style="list-style-type: none;margin-bottom:5px;">
+                            <h5 class="text-center">Selected <span id="total-added-card">0</span>
+                            </h5>
+                            <ul id="player-select" style="list-style-type: none;margin-bottom:5px;">
                                 <li style="padding: 10px">1.</li>
                                 <li style="padding: 10px">2.</li>
                                 <li style="padding: 10px">3.</li>
@@ -92,8 +102,11 @@
                         <div class="card-body">
                             <h5 class="card-title">Vítor Machado</h5>
                             <p class="card-text">Goals:La Liga (0)</p>
+                            <div>
+                                <button class="btn border-0 m-2 btn-primary" onclick="addToCard(this)">SELECT</button>
+                            </div>
                         </div>
-                        <button class="btn border-0 m-2 btn-primary">SELECT</button>
+
                     </div>
                 </div>
                 <div class="col">
@@ -102,8 +115,11 @@
                         <div class="card-body">
                             <h5 class="card-title">Sergio Ramos</h5>
                             <p class="card-text">Goals:La Liga (2)</p>
+                            <div>
+                                <button class="btn border-0 m-2 btn-primary" onclick="addToCard(this)">SELECT</button>
+                            </div>
                         </div>
-                        <button class="btn border-0 m-2 btn-primary">SELECT</button>
+
                     </div>
                 </div>
                 <div class="col">
@@ -112,8 +128,11 @@
                         <div class="card-body">
                             <h5 class="card-title">Renato Sanches</h5>
                             <p class="card-text">Goals:la Liga(32)</p>
+                            <div>
+                                <button class="btn border-0 m-2 btn-primary" onclick="addToCard(this)">SELECT</button>
+                            </div>
                         </div>
-                        <button class="btn border-0 m-2 btn-primary">SELECT</button>
+
                     </div>
                 </div>
                 <div class="col">
@@ -164,27 +183,7 @@
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-
     </main>
-
-
-
-
-
-
-
-
-
-
-
     <script src="Select/select.js"></script>
 </body>
 
