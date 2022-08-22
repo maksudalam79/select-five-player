@@ -1,4 +1,28 @@
 const cardArray = [];
+
+function allSelect(playerCard) {
+    console.log(playerCard)
+    const tableBody = document.getElementById("player_select");
+    tableBody.innerHTML = "";
+    for (let i = 0; i < playerCard.length; i++) {
+        console.log(cardArray[i].playerName);
+        const name = cardArray[i].playerName;
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+    <tr>
+    <th>${i + 1}</th>
+    <td>${name}</td>
+</tr>`;
+        tableBody.appendChild(tr)
+    }
+
+
+
+
+
+}
+
 function addToCard(element) {
     const playerName = element.parentNode.parentNode.children[0].innerText;
     const playerObj = {
@@ -6,4 +30,5 @@ function addToCard(element) {
     }
     cardArray.push(playerObj)
     document.getElementById('total-added-card').innerText = cardArray.length;
+    allSelect(cardArray);
 }
