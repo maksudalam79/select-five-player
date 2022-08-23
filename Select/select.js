@@ -4,10 +4,15 @@ function allSelect(playerCard) {
     const tableBody = document.getElementById("player_select");
     tableBody.innerHTML = "";
     for (let i = 0; i < playerCard.length; i++) {
-        console.log(cardArray[i].playerName);
+
+        if (playerCard.length >= 6) {
+            return alert("select 5 button")
+        }
+
+
+
+
         const name = cardArray[i].playerName;
-
-
         const tr = document.createElement('tr');
         tr.innerHTML = `
     <tr>
@@ -16,12 +21,7 @@ function allSelect(playerCard) {
 </tr>`;
         tableBody.appendChild(tr)
     }
-    if (playerCard.length <= 5) {
-        return
-    }
-    else {
-        return alert("gewfrygwe")
-    }
+
 
 
 }

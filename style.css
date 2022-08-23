@@ -1,3 +1,13 @@
 .banner {
     background: linear-gradient(#3D3D3D, #4A1124);
+
+    background-image: url(img/bannar.jpg)
+}
+
+.text-size {
+    font-size: 50px;
+}
+
+.text-size-p {
+    font-size: 25px;
 }
