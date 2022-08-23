@@ -1,32 +1,26 @@
 const cardArray = [];
 
 function allSelect(playerCard) {
-    const tableBody = document.getElementById("player_select");
-    tableBody.innerHTML = "";
+    const ul = document.getElementById("player_select");
+    ul.innerHTML = "";
     for (let i = 0; i < playerCard.length; i++) {
 
-        if (playerCard.length >= 6) {
-            return alert("select 5 button")
-        }
-
-
-
-
         const name = cardArray[i].playerName;
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-    <tr>
-    <th>${i + 1}</th>
-    <td>${name}</td>
-</tr>`;
-        tableBody.appendChild(tr)
+        const li = document.createElement('li');
+
+
+
+        li.innerHTML = `
+
+    <li>${i + 1}</li>
+    <li>${name}</li>
+`;
+        ul.appendChild(li)
+
+
     }
 
-
-
 }
-
-
 function addToCard(element) {
     const playerName = element.parentNode.parentNode.children[0].innerText;
     const playerObj = {
@@ -36,6 +30,7 @@ function addToCard(element) {
     document.getElementById('total-added-card').innerText = cardArray.length;
 
     allSelect(cardArray);
+
 
 }
 
@@ -55,6 +50,7 @@ document.getElementById('per-person').addEventListener('click', function () {
     const totalPlayerString = totalPlayerExpenses.innerText;
     const totalPlayerNumber = parseInt(totalPlayerString);
     totalPlayerExpenses.innerText = totalPerson;
+
 
     return totalPlayerNumber;
 

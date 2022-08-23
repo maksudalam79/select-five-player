@@ -1,7 +1,6 @@
 .banner {
-    background: linear-gradient(#3D3D3D, #4A1124);
+    background-image: url(img/bannar.jpg);
 
-    background-image: url(img/bannar.jpg)
 }
 
 .text-size {
@@ -10,4 +9,27 @@
 
 .text-size-p {
     font-size: 25px;
+}
+
+.back {
+    background-image: url(img/alexander-grey-WqPAETBU2G8-unsplash.jpg);
+
+}
+
+.horizontal {
+    color: white;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.selectItem {
+    font-weight: 700;
+    list-style: none;
+
+}
+
+.bgImg {
+    background-image: url(img/download\ \(5\).jfif);
+    width: 100%;
+
 }
